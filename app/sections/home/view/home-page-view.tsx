@@ -1,4 +1,5 @@
 import Data from '../data';
+import Faq from '../faq';
 import Method from '../method';
 
 const HomePageView = () => {
@@ -6,6 +7,7 @@ const HomePageView = () => {
     <div>
       <Data />
       <Method />
+      <Faq />
     </div>
   );
 };

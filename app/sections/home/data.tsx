@@ -2,7 +2,7 @@ import DataCard from '~/components/cards/DataCard';
 
 const Data = () => {
   return (
-    <div className='py-28 px-60 bg-[#252549] flex flex-col mb-[50px] gap-16'>
+    <div className='py-28 px-60 bg-[#252549] flex flex-col  gap-16'>
       <div className='flex flex-col gap-4'>
         <p className='font-bold text-[48px] text-[#FFFFFF] text-center'>
           Your data and collaborations,{' '}
@@ -14,7 +14,7 @@ const Data = () => {
           of mind.
         </p>
       </div>
-      <div className='flex  justify-between gap-5'>
+      <div className='grid grid-cols-2 xl:grid-cols-4 gap-5 flex-wrap'>
         <DataCard
           image='/image/data_security.svg'
           description='Data encrypted and GDPR- compliant'
