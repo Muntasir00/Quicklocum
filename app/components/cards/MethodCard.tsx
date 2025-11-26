@@ -4,7 +4,7 @@ type DataCardProps = {
 };
 const MethodCard = ({ title, description }: DataCardProps) => {
   return (
-    <div className=' p-6 rounded-2xl flex flex-col justify-between min-w-[472] backdrop-blur-3xl bg-[#FFFFFF]/8'>
+    <div className=' p-6 rounded-2xl flex flex-col justify-between backdrop-blur-3xl bg-[#FFFFFF]/8'>
       <p className='font-normal text-[16px] text-[#FFFFFF]'>{title}</p>
       <p className='font-normal text-[24px] text-[#FFFFFF]'>{description}</p>
     </div>

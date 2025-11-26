@@ -13,7 +13,7 @@ const Method = () => {
           over traditional methods?
         </p>
 
-        <div className='grid grid-cols-3 gap-3'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-3'>
           <MethodCard
             title='Verified Professionals'
             description='Connect with verified healthcare professionals'
