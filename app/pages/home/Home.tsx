@@ -1,4 +1,4 @@
-import HomePageView from '~/sections/home/home-page-view';
+import HomePageView from '~/sections/home/view/home-page-view';
 
 const Home = () => {
   return (
