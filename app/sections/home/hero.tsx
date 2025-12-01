@@ -33,6 +33,26 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* inner section */}
+      <div className='pt-[140px] flex flex-col gap-8 max-w-[1098px] mx-auto justify-center items-center'>
+        <p className='font-normal text-[16px] leading-4 text-center text-[rgba(24, 24, 27, 1)]'>
+          An intelligent digital platform that connects clients and healthcare
+          professionals in dentistry, pharmacy, nursing, and general medicine.
+          <span className='font-medium'>
+            Save time, automate your processes, and find the right match in just
+            a few clicks.
+          </span>
+        </p>
+        <div className='flex gap-3'>
+          <div className='flex py-3.5 px-6 rounded-[12px] bg-[#252549] justify-center items-center gap-2.5'>
+            <p className='text-[#FFFFFF] text-[16px] font-medium'>Try Now →</p>
+          </div>
+          <div className='flex py-3.5 px-6 rounded-[12px]  justify-center items-center gap-2.5'>
+            <p className='text-[#09090B] text-[16px] font-medium'>Try Now →</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
