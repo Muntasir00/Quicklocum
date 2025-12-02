@@ -1,3 +1,4 @@
+import About from '../about';
 import Data from '../data';
 import Digitalize from '../digitalize';
 import Experience from '../experience';
@@ -16,6 +17,7 @@ const HomePageView = () => {
       <Data />
       <Digitalize />
       <Method />
+      <About />
       <Match />
       <Faq />
     </div>

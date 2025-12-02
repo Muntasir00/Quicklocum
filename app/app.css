@@ -1,6 +1,8 @@
 @import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/scrollbar';
 @import url('https://db.onlinewebfonts.com/c/e313dfb6f0d4c85cabeac18e264e5f5e?family=NN+Nouvelle+Grotesk+STD');
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 

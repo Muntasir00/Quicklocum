@@ -1,7 +1,7 @@
 const Service = () => {
   return (
     <div className='px-60 pb-28 bg-white'>
-      <div className='rounded-[40px] p-20 flex gap-6 bg-gradient-to-b from-[#7ED958] to-[#43732F] justify-center items-center'>
+      <div className='rounded-[40px] p-20 flex gap-6 bg-gradient-to-b from-[#7ED958] to-[#43732F] justify-center items-stretch'>
         {/* card 1 */}
 
         <div className='rounded-2xl p-10 flex flex-col gap-8 bg-[#FFFFFF] w-[50%]'>
@@ -13,7 +13,7 @@ const Service = () => {
               Manage your staffing needs with ease
             </p>
           </div>
-          <div className='flex justify-start'>
+          <div className='flex justify-start '>
             <ul className='list-disc pl-10 space-y-5'>
               <li className='font-normal text-[18px] leading-[29.25px] text-[#3F3F46] marker:text-[30px] '>
                 Post your staffing needs in a few clicks
@@ -49,7 +49,7 @@ const Service = () => {
               Tailored, high-value opportunities at your fingertips
             </p>
           </div>
-          <div className='flex justify-start'>
+          <div className='flex justify-start flex-wrap'>
             <ul className='list-disc pl-10 space-y-5'>
               <li className='font-normal text-[18px] leading-[29.25px] text-[#3F3F46] marker:text-[30px] '>
                 Access verified assignments suited to your expertise
@@ -64,7 +64,8 @@ const Service = () => {
                 Receive personalized matches powered by smart algorithms
               </li>
               <li className='font-normal text-[18px] leading-[29.25px] text-[#3F3F46] marker:text-[30px] '>
-                Partner with trusted professionals and clinics.
+                Partner with trusted professionals and clinics.Collaborate with
+                trusted partners
               </li>
             </ul>
           </div>
