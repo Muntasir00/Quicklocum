@@ -35,7 +35,7 @@ const About = () => {
           <SwiperSlide>
             <div className='w-[520px] h-[480px] rounded-2xl  border bg-[#FFFFFF]/25 p-7 flex flex-col justify-between mb-30'>
               <div className='flex flex-col gap-6 '>
-                <img src='/public/image/ratings.svg' alt='ratings' />
+                <img src='/image/ratings.svg' alt='ratings' />
                 <p className='font-normal text-[24px] leading-9 text-[#09090B]'>
                   "Quicklocum connected our clinic with a qualified nurse within
                   24 hours — seamless experience."
@@ -43,7 +43,7 @@ const About = () => {
               </div>
               <div className='flex gap-1 '>
                 <img
-                  src='/public/image/about_card.png'
+                  src='/image/about_card.png'
                   alt=''
                   className='rounded-[9999px] w-12 h-12'
                 />
@@ -62,7 +62,7 @@ const About = () => {
           <SwiperSlide>
             <div className='w-[520px] h-[480px] rounded-2xl  border bg-[#FFFFFF]/25 p-7 flex flex-col justify-between'>
               <div className='flex flex-col gap-6 '>
-                <img src='/public/image/ratings.svg' alt='ratings' />
+                <img src='/image/ratings.svg' alt='ratings' />
                 <p className='font-normal text-[24px] leading-9 text-[#09090B]'>
                   "Quicklocum connected our clinic with a qualified nurse within
                   24 hours — seamless experience."
@@ -70,7 +70,7 @@ const About = () => {
               </div>
               <div className='flex gap-1 '>
                 <img
-                  src='/public/image/about_card.png'
+                  src='/image/about_card.png'
                   alt=''
                   className='rounded-[9999px] w-12 h-12'
                 />
@@ -89,7 +89,7 @@ const About = () => {
           <SwiperSlide>
             <div className='w-[520px] h-[480px] rounded-2xl  border bg-[#FFFFFF]/25 p-7 flex flex-col justify-between'>
               <div className='flex flex-col gap-6 '>
-                <img src='/public/image/ratings.svg' alt='ratings' />
+                <img src='/image/ratings.svg' alt='ratings' />
                 <p className='font-normal text-[24px] leading-9 text-[#09090B]'>
                   "Quicklocum connected our clinic with a qualified nurse within
                   24 hours — seamless experience."
@@ -97,7 +97,7 @@ const About = () => {
               </div>
               <div className='flex gap-1 '>
                 <img
-                  src='/public/image/about_card.png'
+                  src='/image/about_card.png'
                   alt=''
                   className='rounded-[9999px] w-12 h-12'
                 />
@@ -116,7 +116,7 @@ const About = () => {
           <SwiperSlide>
             <div className='w-[520px] h-[480px] rounded-2xl  border bg-[#FFFFFF]/25 p-7 flex flex-col justify-between'>
               <div className='flex flex-col gap-6 '>
-                <img src='/public/image/ratings.svg' alt='ratings' />
+                <img src='/image/ratings.svg' alt='ratings' />
                 <p className='font-normal text-[24px] leading-9 text-[#09090B]'>
                   "Quicklocum connected our clinic with a qualified nurse within
                   24 hours — seamless experience."
@@ -124,7 +124,7 @@ const About = () => {
               </div>
               <div className='flex gap-1 '>
                 <img
-                  src='/public/image/about_card.png'
+                  src='/image/about_card.png'
                   alt=''
                   className='rounded-[9999px] w-12 h-12'
                 />
@@ -143,7 +143,7 @@ const About = () => {
           <SwiperSlide>
             <div className='w-[520px] h-[480px] rounded-2xl  border bg-[#FFFFFF]/25 p-7 flex flex-col justify-between'>
               <div className='flex flex-col gap-6 '>
-                <img src='/public/image/ratings.svg' alt='ratings' />
+                <img src='/image/ratings.svg' alt='ratings' />
                 <p className='font-normal text-[24px] leading-9 text-[#09090B]'>
                   "Quicklocum connected our clinic with a qualified nurse within
                   24 hours — seamless experience."
@@ -151,7 +151,7 @@ const About = () => {
               </div>
               <div className='flex gap-1 '>
                 <img
-                  src='/public/image/about_card.png'
+                  src='/image/about_card.png'
                   alt=''
                   className='rounded-[9999px] w-12 h-12'
                 />
