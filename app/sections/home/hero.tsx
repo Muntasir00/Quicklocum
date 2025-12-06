@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className='relative flex flex-col gap-25 pt-[35px]  bg-[#FFFFFF] h-[1080px] '>
+    <div className='relative flex flex-col gap-25 pt-[35px]  bg-[#FFFFFF] pb-[400px] xl:h-[1080px] xl:pb-0'>
       <div className="absolute inset-0 bg-[url('/image/Frame_new.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
       {/* <div className='pointer-events-none absolute inset-0 -z-10'> */}
       {/* blob 1 - large, subtle */}
@@ -63,11 +63,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('/image/hero.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
 
       {/* nav section */}
-      <div className='flex justify-between rounded-[12px] border border-[rgba(255, 255, 255, 0.52)] backdrop-blur-21 p-4 bg-[rgba(255, 255, 255, 0.19)] items-center w-[1300px] mx-auto'>
+      <div className='flex justify-between rounded-[12px]  backdrop-blur-21 p-4 bg-[rgba(255, 255, 255, 0.19)] items-center   lg:border border-[rgba(255, 255, 255, 0.52)] xl:w-[1300px] xl:mx-auto'>
         <p className='font-bold text-[28px] leading-[100%] text-[rgba(37, 37, 73, 1)]'>
           Quicklocum.
         </p>
-        <ul className='flex gap-12 '>
+        <ul className=' gap-12 hidden lg:flex'>
           <li className='font-normal text-[16px] leading-[100%] text-[rgba(24, 24, 27, 1)]'>
             How It Works
           </li>
@@ -81,7 +81,8 @@ const Hero = () => {
             Pricing
           </li>
         </ul>
-        <div className='flex gap-2.5'>
+
+        <div className=' gap-2.5 hidden lg:flex'>
           <div className='rounded-[12px] py-3.5 px-2.5 border border-[rgba(37, 37, 73, 0.5)]'>
             <p className='font-normal text-[16px] text-[rgba(24, 24, 27, 1)] leading-[100%] '>
               En
@@ -93,11 +94,15 @@ const Hero = () => {
             </p>
           </div>
         </div>
+
+        <div className='lg:hidden'>
+          <img src='/image/List.svg' alt='menu' className='h-6 w-6' />
+        </div>
       </div>
 
       {/* body section */}
       <div className=' flex flex-col gap-8 max-w-[1098px] mx-auto justify-center items-center'>
-        <p className='w-[1099px] text-center text-[#18181B] text-[48px] '>
+        <p className='2xl:w-[1099px] text-center text-[#18181B] text-[38px] xl:text-[48px] '>
           <span className='text-[#32328C]'>Healthcare recruitment </span>
           reinvented through cutting-edge technology
         </p>
@@ -168,59 +173,171 @@ const Hero = () => {
       </div>
 
       {/* Buttons */}
+      {/* 1 */}
+      <div
+        className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4) shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+        
 
-      <div className='rounded-[20px] p-5 flex gap-5 bg-[rgba(255, 255, 255, 0.4) shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit absolute top-[628px] left-16 '>
+        2xl:absolute 
+        2xl:top-[628px] 2xl:left-16
+        3xl:top-[628px] 3xl:left-16 z-50'
+      >
         <img src='/image/codicon_account.svg' alt='img' />
         <div className='flex flex-col'>
-          <p className='font-medium text-[24px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
             Create account
           </p>
-          <p className='font-light text-[20px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
             Free & quick
           </p>
         </div>
       </div>
-
-      <div className='rounded-[20px] p-5 flex gap-5 bg-[rgba(255, 255, 255, 0.4) shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit absolute top-[787px] left-[281px] '>
+      {/* 2 */}
+      <div
+        className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+        2xl:absolute 
+        2xl:top-[787px] 2xl:left-[281px]
+        
+      3xl:top-[787px] 3xl:left-[281px] z-50'
+      >
         <img src='/image/codicon_account.svg' alt='img' />
         <div className='flex flex-col'>
-          <p className='font-medium text-[24px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
             Verify profile
           </p>
-          <p className='font-light text-[20px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
             Credentials in 24h
           </p>
         </div>
       </div>
-
-      <div className='rounded-[20px] p-5 flex gap-5 bg-[rgba(255, 255, 255, 0.4) shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit absolute top-[825px] left-[1335px] '>
+      {/* 3 */}
+      <div
+        className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+        2xl:absolute 
+        2xl:top-[825px] 2xl:left-[1300px]
+       
+      3xl:top-[825px] 3xl:left-[1335px] z-50'
+      >
         <img src='/image/browse.svg' alt='img' />
         <div className='flex flex-col'>
-          <p className='font-medium text-[24px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
             Browse
           </p>
-          <p className='font-light text-[20px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
             Jobs & contracts
           </p>
         </div>
       </div>
-
-      <div className='rounded-[20px] p-5 flex gap-5 bg-[rgba(255, 255, 255, 0.4) shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit absolute top-[628px] left-[1574px] '>
+      {/* 4 */}
+      <div
+        className='rounded-[20px] p-5 hidden  2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit  
+        2xl:absolute
+        2xl:top-[628px] 2xl:left-[1400px] 
+      3xl:top-[628px] 3xl:left-[1574px] z-50 '
+      >
         <img src='/image/colaborate.svg' alt='img' />
         <div className='flex flex-col'>
-          <p className='font-medium text-[24px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
             Collaborate
           </p>
-          <p className='font-light text-[20px] leading-[100%] text-center text-[#000000]'>
+          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
             Secure contracts
           </p>
         </div>
       </div>
 
+      {/* Test Button */}
+      <div className='flex flex-col justify-center items-center gap-3 relative mx-auto'>
+        <div
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] 
+          absolute
+          top-0
+          -left-[150px]
+          w-[200px]
+        
+
+        2xl:hidden'
+        >
+          <img src='/image/codicon_account.svg' alt='img' />
+          <div className='flex flex-col'>
+            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+              Create account
+            </p>
+            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+              Free & quick
+            </p>
+          </div>
+        </div>
+        {/* 2 */}
+        <div
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+         z-50 absolute left-[50px] top-20 2xl:hidden'
+        >
+          <img src='/image/codicon_account.svg' alt='img' />
+          <div className='flex flex-col'>
+            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+              Verify profile
+            </p>
+            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+              Credentials in 24h
+            </p>
+          </div>
+        </div>
+        {/* 3 */}
+        <div
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+         z-50 absolute -left-[150px] top-[150px] 2xl:hidden'
+        >
+          <img src='/image/browse.svg' alt='img' />
+          <div className='flex flex-col'>
+            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+              Browse
+            </p>
+            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+              Jobs & contracts
+            </p>
+          </div>
+        </div>
+        {/* 4 */}
+        <div
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit absolute left-[50px] 
+          top-[200px]
+        
+     2xl:hidden z-50 '
+        >
+          <img src='/image/colaborate.svg' alt='img' />
+          <div className='flex flex-col'>
+            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+              Collaborate
+            </p>
+            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+              Secure contracts
+            </p>
+          </div>
+        </div>
+
+        <div
+          className='rounded-[20px] bg-white  shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[80px] z-10
+          h-[300px]
+          w-[300px]
+          absolute
+          top-[300px]
+        2xl:hidden 
+
+'
+        ></div>
+      </div>
+
+      {/* end test button */}
+
       {/* white box */}
       <div
-        className='absolute h-[700px] w-[650px] top-[668px] left-[633px] rounded-[20px] bg-white 
-shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[80px]
+        className='rounded-[20px] bg-white  shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[80px] z-10
+        hidden
+        2xl:block
+        2xl:absolute
+        2xl:h-[700px] 2xl:w-[650px] 2xl:top-[668px] 2xl:left-[633px]  
+
 '
       ></div>
     </div>
