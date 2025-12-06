@@ -214,7 +214,7 @@ const Hero = () => {
       <div
         className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
         2xl:absolute 
-        2xl:top-[825px] 2xl:left-[1300px]
+        2xl:top-[825px] 2xl:left-[1100px]
        
       3xl:top-[825px] 3xl:left-[1335px] z-50'
       >
@@ -232,7 +232,7 @@ const Hero = () => {
       <div
         className='rounded-[20px] p-5 hidden  2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit  
         2xl:absolute
-        2xl:top-[628px] 2xl:left-[1400px] 
+        2xl:top-[628px] 2xl:left-[1250px] 
       3xl:top-[628px] 3xl:left-[1574px] z-50 '
       >
         <img src='/image/colaborate.svg' alt='img' />
@@ -336,7 +336,8 @@ const Hero = () => {
         hidden
         2xl:block
         2xl:absolute
-        2xl:h-[700px] 2xl:w-[650px] 2xl:top-[668px] 2xl:left-[633px]  
+        2xl:h-[500px] 2xl:w-[400px] 2xl:top-[668px] 2xl:left-[633px]  
+        3xl:h-[700px] 3xl:w-[650px] 3xl:top-[668px] 3xl:left-[633px]  
 
 '
       ></div>
