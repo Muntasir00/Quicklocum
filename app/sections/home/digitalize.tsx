@@ -11,7 +11,7 @@ const Digitalize = () => {
           Our mission is to deliver a 100% digital and intelligent solution that
           benefits both clients and healthcare professionals.
         </p>
-        <div className='flex gap-8 justify-between flex-wrap'>
+        <div className='flex  gap-8 justify-between flex-wrap'>
           <div className='rounded-[12px] bg-[#FFFFFF] flex justify-center items-center px-10 py-5'>
             <p className='font-bold text-[18px] text-center'>
               Faster connections

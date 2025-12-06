@@ -253,17 +253,17 @@ const Hero = () => {
           absolute
           top-0
           -left-[150px]
-          w-[300px]
+          md:w-[300px]
         
 
         2xl:hidden'
         >
           <img src='/image/codicon_account.svg' alt='img' />
           <div className='flex flex-col'>
-            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
               Create account
             </p>
-            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-light text-[12px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
               Free & quick
             </p>
           </div>
@@ -271,47 +271,48 @@ const Hero = () => {
         {/* 2 */}
         <div
           className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px]  
-          w-[300px]
+          
+          md:w-[300px]
          z-50 absolute left-[50px] top-20 2xl:hidden'
         >
-          <img src='/image/codicon_account.svg' alt='img' />
+          <img src='/image/codicon_account.svg' alt='img' className='h-6 w-6' />
           <div className='flex flex-col'>
-            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
               Verify profile
             </p>
-            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-light  text-[12px]  xl:text-[20px] leading-[100%] text-center text-[#000000]'>
               Credentials in 24h
             </p>
           </div>
         </div>
         {/* 3 */}
         <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-[300px]
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] md:w-[300px]
          z-50 absolute -left-[150px] top-[150px] 2xl:hidden'
         >
           <img src='/image/browse.svg' alt='img' />
           <div className='flex flex-col'>
-            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
               Browse
             </p>
-            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-light text-[12px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
               Jobs & contracts
             </p>
           </div>
         </div>
         {/* 4 */}
         <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-[300px] absolute left-[50px] 
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] md:w-[300px] absolute left-[50px] 
           top-[200px]
         
      2xl:hidden z-50 '
         >
           <img src='/image/colaborate.svg' alt='img' />
           <div className='flex flex-col'>
-            <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
               Collaborate
             </p>
-            <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
+            <p className='font-light text-[12px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
               Secure contracts
             </p>
           </div>

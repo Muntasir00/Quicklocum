@@ -3,9 +3,9 @@ import { Button } from '~/components/ui/button';
 const Footer = () => {
   return (
     <div className='bg-[#252549]  pt-28 pb-16 w-full relative flex flex-col flex-wrap gap-5 px-7 2xl:px-60'>
-      <div className='flex justify-between flex-wrap'>
+      <div className='flex justify-between flex-wrap gap-4'>
         <div className='flex flex-col flex-wrap gap-6 max-w-[554px]'>
-          <p className=' font-bold text-[40px] text-[#FFFFFF] font-nouvelle'>
+          <p className=' font-bold text-[40px] text-[#FFFFFF] '>
             Ready to experience smarter healthcare recruitment?
           </p>
           <p className=' font-normal text-[18px] leading-7 text-[#E2E8F0]'>

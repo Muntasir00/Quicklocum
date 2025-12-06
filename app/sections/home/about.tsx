@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 
 const About = () => {
   return (
-    <div className='relative pt-[172px]   flex flex-col justify-between bg-gradient-to-b from-[#7ED958] to-[#43732F] pb-[411px] px-11 2xl:pl-[140px] 2xl:pr-[156px]'>
+    <div className='relative pt-[172px]   flex flex-col justify-between bg-gradient-to-b from-[#7ED958] to-[#43732F] pb-[100px] 2xl:pb-[411px] px-11 2xl:pl-[140px] 2xl:pr-[156px]'>
       <div className="absolute inset-0 bg-[url('/image/about_section.png')] bg-cover bg-center bg-no-repeat opacity-56"></div>
       <div className='z-10'>
         <p className='font-bold text-[48px] leading-[100%] text-center text-[#18181B] '>

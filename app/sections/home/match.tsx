@@ -32,7 +32,7 @@ const Match = () => {
           {/* White cards */}
           <div className='absolute top-[170px] left-0 right-0 flex justify-between px-20'>
             <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg' />
-            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9  -left-[100px] lg:-left-[42px]' />
+            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9  -left-2.5 lg:-left-[42px]' />
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const Match = () => {
           {/* White cards */}
           <div className='absolute top-[170px] left-0 right-0 flex justify-between px-20'>
             <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg' />
-            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9 -left-[100px] lg:-left-[42px]' />
+            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9 -left-2.5 lg:-left-[42px]' />
           </div>
         </div>
       </div>

@@ -12,8 +12,8 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className='flex gap-6 flex-wrap w-fit'>
-          <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start'>
+        <div className='flex flex-col md:flex-row gap-6  w-full'>
+          <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start w-full'>
             <p className='text-[40px] text-[#252549] font-bold leading-[100%]'>
               01
             </p>
@@ -27,7 +27,7 @@ const Experience = () => {
               </p>
             </div>
           </div>
-          <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start bg-[#252549]'>
+          <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start bg-[#252549] w-full'>
             <p className='text-[40px] text-white font-bold leading-[100%]'>
               02
             </p>
@@ -42,7 +42,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start'>
+          <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start w-full'>
             <p className='text-[40px] text-[#252549] font-bold leading-[100%]'>
               03
             </p>

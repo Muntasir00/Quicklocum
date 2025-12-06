@@ -7,13 +7,13 @@ import {
 
 const Faq = () => {
   return (
-    <div className='py-28  bg-gradient-to-b from-[#7ED958]/40 to-[#FFFFFF]/40  flex justify-between px-7 2xl:px-60 flex-wrap'>
+    <div className='py-28  bg-gradient-to-b from-[#7ED958]/40 to-[#FFFFFF]/40  flex justify-between px-7 2xl:px-60 flex-col md:flex-row'>
       <div className=''>
         <p className='text-[#18181B] text-[48px] font-bold '>
           <span className='text-[#009E4A]'>Frequently</span> Asked Questions
         </p>
       </div>
-      <div className='w-[800px]'>
+      <div className='w-full '>
         <Accordion
           type='single'
           collapsible
