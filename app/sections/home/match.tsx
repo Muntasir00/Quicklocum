@@ -1,6 +1,6 @@
 const Match = () => {
   return (
-    <div className='bg-[#EFF6F9] py-28 px-60 flex flex-col justify-center items-center gap-16 mx-auto'>
+    <div className='bg-[#EFF6F9] py-28  flex flex-col justify-center items-center gap-16 mx-auto px-7 2xl:px-60 '>
       <div className='flex flex-col gap-5'>
         <p className='font-bold text-[48px] text-[#18181B] leading-[100%] text-center'>
           Technology that finds your{' '}
@@ -12,9 +12,9 @@ const Match = () => {
         </p>
       </div>
 
-      <div className='flex gap-5'>
+      <div className='flex flex-col gap-5 lg:flex-row'>
         {/* Card 1 */}
-        <div className='relative overflow-hidden rounded-2xl bg-[#D1D1FA] p-10 min-h-[420px] backdrop-blur-4 w-[50%]'>
+        <div className='relative overflow-hidden rounded-2xl bg-[#D1D1FA] p-10 min-h-[420px] backdrop-blur-4 w-full 2xl:w-[50%]'>
           {/* Background image */}
           <div className="absolute inset-0 bg-[url('/image/match.jpg')] bg-cover bg-center bg-no-repeat opacity-10" />
 
@@ -32,12 +32,12 @@ const Match = () => {
           {/* White cards */}
           <div className='absolute top-[170px] left-0 right-0 flex justify-between px-20'>
             <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg' />
-            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9 -left-[42px]' />
+            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9  -left-[100px] lg:-left-[42px]' />
           </div>
         </div>
 
         {/* Card 2 */}
-        <div className='relative overflow-hidden rounded-2xl bg-[#D1D1FA] p-10 min-h-[420px] backdrop-blur-4 w-[50%]'>
+        <div className='relative overflow-hidden rounded-2xl bg-[#D1D1FA] p-10 min-h-[420px] backdrop-blur-4 w-full 2xl:w-[50%]'>
           {/* Background image */}
           <div className="absolute inset-0 bg-[url('/image/match.jpg')] bg-cover bg-center bg-no-repeat opacity-10" />
 
@@ -55,7 +55,7 @@ const Match = () => {
           {/* White cards */}
           <div className='absolute top-[170px] left-0 right-0 flex justify-between px-20'>
             <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg' />
-            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9 -left-[42px]' />
+            <div className='relative rounded-[20px] bg-white h-[300px] w-[290px] shadow-lg top-9 -left-[100px] lg:-left-[42px]' />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <div className='pt-[360px] pb-28 px-60 bg-white'>
+    <div className='pt-[360px] bg-white px-7 2xl:px-60 pb-28 mx-auto '>
       <div className='flex flex-col gap-14 justify-center items-center'>
         <div className='flex flex-col gap-4'>
           <p className='font-bold text-[48px] text-center'>
@@ -12,7 +12,7 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className='flex gap-6'>
+        <div className='flex gap-6 flex-wrap w-fit'>
           <div className='rounded-2xl p-8 flex flex-col gap-3.5 justify-start'>
             <p className='text-[40px] text-[#252549] font-bold leading-[100%]'>
               01

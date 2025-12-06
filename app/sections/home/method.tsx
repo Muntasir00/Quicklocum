@@ -2,7 +2,7 @@ import MethodCard from '~/components/cards/MethodCard';
 
 const Method = () => {
   return (
-    <div className='relative py-28 px-60 flex flex-col gap-16 justify-center items-center bg-[#252549] '>
+    <div className='relative py-28  flex flex-col gap-16 justify-center items-center bg-[#252549] px-7 2xl:px-60'>
       {/* Background Image Layer with 20% opacity */}
       <div className="absolute inset-0 bg-[url('/image/method-bg.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
 

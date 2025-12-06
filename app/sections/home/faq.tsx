@@ -7,7 +7,7 @@ import {
 
 const Faq = () => {
   return (
-    <div className='py-28 px-60 bg-gradient-to-b from-[#7ED958]/40 to-[#FFFFFF]/40  flex justify-between'>
+    <div className='py-28  bg-gradient-to-b from-[#7ED958]/40 to-[#FFFFFF]/40  flex justify-between px-7 2xl:px-60 flex-wrap'>
       <div className=''>
         <p className='text-[#18181B] text-[48px] font-bold '>
           <span className='text-[#009E4A]'>Frequently</span> Asked Questions

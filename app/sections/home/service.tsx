@@ -1,10 +1,10 @@
 const Service = () => {
   return (
-    <div className='px-60 pb-28 bg-white'>
-      <div className='rounded-[40px] p-20 flex gap-6 bg-gradient-to-b from-[#7ED958] to-[#43732F] justify-center items-stretch'>
+    <div className=' pb-28 bg-white lg:px-7 2xl:px-60'>
+      <div className='rounded-[40px]  flex flex-wrap gap-6 bg-gradient-to-b from-[#7ED958] to-[#43732F] justify-center items-stretch p-7 2xl:p-20'>
         {/* card 1 */}
 
-        <div className='rounded-2xl p-10 flex flex-col gap-8 bg-[#FFFFFF] w-[50%]'>
+        <div className='rounded-2xl p-10 flex flex-col gap-8 bg-[#FFFFFF] w-full xl:w-[50%]'>
           <div className='flex flex-col gap-5'>
             <p className='font-bold text-[30px] leading-9 text-[#252549]'>
               For Clients
@@ -40,7 +40,7 @@ const Service = () => {
         </div>
 
         {/* card 2 */}
-        <div className='rounded-2xl p-10 flex flex-col gap-8 bg-[#FFFFFF] w-[50%]'>
+        <div className='rounded-2xl p-10 flex flex-col gap-8 bg-[#FFFFFF] w-full xl:w-[50%]'>
           <div className='flex flex-col gap-5'>
             <p className='font-bold text-[30px] leading-9 text-[#252549]'>
               For Professionals

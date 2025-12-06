@@ -1,7 +1,7 @@
 const Digitalize = () => {
   return (
-    <div className='py-28 px-68 bg-gradient-to-b from-[#FFFFFF] to-[#C2E4CE] flex flex-col gap-16'>
-      <p className='font-bold text-[48px] text-center text-[#18181B]'>
+    <div className='py-28 bg-gradient-to-b from-[#FFFFFF] to-[#C2E4CE] flex flex-col  px-7 gap-2.5 2xl:px-68 2xl:gap-16'>
+      <p className='font-bold  text-center text-[#18181B] text-4xl 2xl:text-[48px]'>
         Digitalizing{' '}
         <span className='text-[#009E4A]'>healthcare recruitment</span> across
         Canada — with real impact.
@@ -11,7 +11,7 @@ const Digitalize = () => {
           Our mission is to deliver a 100% digital and intelligent solution that
           benefits both clients and healthcare professionals.
         </p>
-        <div className='flex gap-8 justify-between'>
+        <div className='flex gap-8 justify-between flex-wrap'>
           <div className='rounded-[12px] bg-[#FFFFFF] flex justify-center items-center px-10 py-5'>
             <p className='font-bold text-[18px] text-center'>
               Faster connections
