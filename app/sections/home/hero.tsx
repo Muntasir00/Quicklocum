@@ -253,7 +253,7 @@ const Hero = () => {
           absolute
           top-0
           -left-[150px]
-          w-[200px]
+          w-[300px]
         
 
         2xl:hidden'
@@ -270,7 +270,8 @@ const Hero = () => {
         </div>
         {/* 2 */}
         <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px]  
+          w-[300px]
          z-50 absolute left-[50px] top-20 2xl:hidden'
         >
           <img src='/image/codicon_account.svg' alt='img' />
@@ -285,7 +286,7 @@ const Hero = () => {
         </div>
         {/* 3 */}
         <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-[300px]
          z-50 absolute -left-[150px] top-[150px] 2xl:hidden'
         >
           <img src='/image/browse.svg' alt='img' />
@@ -300,7 +301,7 @@ const Hero = () => {
         </div>
         {/* 4 */}
         <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit absolute left-[50px] 
+          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-[300px] absolute left-[50px] 
           top-[200px]
         
      2xl:hidden z-50 '
