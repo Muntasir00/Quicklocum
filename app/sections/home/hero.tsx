@@ -1,350 +1,255 @@
+import { Star, Menu } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router";
+import { Button } from "~/components/ui/button";
+import {
+    Sheet,
+    SheetContent,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "~/components/ui/sheet";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "~/components/ui/select";
+
+import bgImage from "~/../public/image/bg-image.png";
+import heroImage from "~/../public/image/Dashboard.png";
+
+const navLinks = [
+    { name: "How It Works", href: "#how-it-works" },
+    { name: "For Clients", href: "#for-clients" },
+    { name: "For Professionals", href: "#for-professionals" },
+    { name: "Pricing", href: "#pricing" },
+];
+
 const Hero = () => {
-  return (
-    <div className='relative flex flex-col gap-25 pt-[35px]  bg-[#FFFFFF] pb-[400px] xl:h-[1080px] xl:pb-0'>
-      <div className="absolute inset-0 bg-[url('/image/Frame_new.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
-      {/* <div className='pointer-events-none absolute inset-0 -z-10'> */}
-      {/* blob 1 - large, subtle */}
-      {/* <div
-          className='absolute left-[-12%] top-[-10%] w-[900px] h-[900px] rounded-full filter blur-[120px] opacity-30'
-          style={{
-            background:
-              'radial-gradient(circle at 30% 30%, rgba(65,182,92,0.35) 0%, rgba(65,182,92,0.18) 35%, rgba(65,182,92,0.06) 60%, transparent 100%)',
-            transform: 'translateZ(0)',
-          }}
-        /> */}
+    const [isScrolled, setIsScrolled] = useState(false);
 
-      {/* blob 2 - medium, brighter */}
-      {/* <div
-          className='absolute right-[-10%] top-[5%] w-[600px] h-[600px] rounded-full filter blur-[70px] opacity-40'
-          style={{
-            background:
-              'radial-gradient(circle at 40% 40%, rgba(65,182,92,0.45) 0%, rgba(65,182,92,0.22) 40%, rgba(65,182,92,0.06) 70%, transparent 100%)',
-            transform: 'translateZ(0)',
-          }}
-        /> */}
+    useEffect(() => {
+        const handleScroll = () => setIsScrolled(window.scrollY > 20);
+        handleScroll();
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-      {/* blob 3 - small, accent */}
-      {/* <div
-          className='absolute left-[40%] bottom-[-8%] w-[420px] h-[420px] rounded-full filter blur-2xl opacity-45'
-          style={{
-            background:
-              'radial-gradient(circle at 50% 50%, rgba(65,182,92,0.6) 0%, rgba(65,182,92,0.18) 45%, transparent 90%)',
-            transform: 'translateZ(0)',
-          }}
-        /> */}
-      {/* </div> */}
-
-      {/* Dotted border */}
-      {/* Dotted ellipse arc - LEFT */}
-      {/* <div
-        className='absolute pointer-events-none 
-    z-100
-    top-[350px] left-[-350px]
-    w-[1200px] h-[1200px]
-    rounded-full
-    border-[3px] border-dashed border-[rgba(0,0,0,0.25)]
-    border-r-0 border-b-0'
-      ></div> */}
-
-      {/* Dotted ellipse arc - RIGHT */}
-      {/* <div
-        className='
-    absolute pointer-events-none 
-    z-100
-    top-[350px] right-[-350px]
-    w-[1200px] h-[1200px]
-    rounded-full
-    border-[3px] border-dashed border-[rgba(0,0,0,0.25)]
-    border-l-0 border-b-0
-  '
-      ></div> */}
-
-      {/* bg-image */}
-      <div className="absolute inset-0 bg-[url('/image/hero.png')] bg-cover bg-center bg-no-repeat opacity-20"></div>
-
-      {/* nav section */}
-      <div className='flex justify-between rounded-[12px]  backdrop-blur-21 p-4 bg-[rgba(255, 255, 255, 0.19)] items-center   lg:border border-[rgba(255, 255, 255, 0.52)] xl:w-[1300px] xl:mx-auto'>
-        <p className='font-bold text-[28px] leading-[100%] text-[rgba(37, 37, 73, 1)]'>
-          Quicklocum.
-        </p>
-        <ul className=' gap-12 hidden lg:flex'>
-          <li className='font-normal text-[16px] leading-[100%] text-[rgba(24, 24, 27, 1)]'>
-            How It Works
-          </li>
-          <li className='font-normal text-[16px] leading-[100%] text-[rgba(24, 24, 27, 1)]'>
-            For Clients
-          </li>
-          <li className='font-normal text-[16px] leading-[100%] text-[rgba(24, 24, 27, 1)]'>
-            For Professionals
-          </li>
-          <li className='font-normal text-[16px] leading-[100%] text-[rgba(24, 24, 27, 1)]'>
-            Pricing
-          </li>
-        </ul>
-
-        <div className=' gap-2.5 hidden lg:flex'>
-          <div className='rounded-[12px] py-3.5 px-2.5 border border-[rgba(37, 37, 73, 0.5)]'>
-            <p className='font-normal text-[16px] text-[rgba(24, 24, 27, 1)] leading-[100%] '>
-              En
-            </p>
-          </div>
-          <div className='rounded-[12px] py-3.5 px-5 bg-[#252549]'>
-            <p className='font-medium text-[16px] text-white leading-[100%] '>
-              Create My Profile
-            </p>
-          </div>
-        </div>
-
-        <div className='lg:hidden'>
-          <img src='/image/List.svg' alt='menu' className='h-6 w-6' />
-        </div>
-      </div>
-
-      {/* body section */}
-      <div className=' flex flex-col gap-8 max-w-[1098px] mx-auto justify-center items-center'>
-        <p className='2xl:w-[1099px] text-center text-[#18181B] text-[38px] xl:text-[48px] '>
-          <span className='text-[#32328C]'>Healthcare recruitment </span>
-          reinvented through cutting-edge technology
-        </p>
-        <p className='font-normal text-[16px] leading-4 text-center text-[rgba(24, 24, 27, 1)]'>
-          An intelligent digital platform that connects clients and healthcare
-          professionals in dentistry, pharmacy, nursing, and general medicine.
-          <span className='font-medium'>
-            Save time, automate your processes, and find the right match in just
-            a few clicks.
-          </span>
-        </p>
-        <div className='flex gap-3'>
-          <div className='flex py-3.5 px-6 rounded-[12px] bg-[#252549] justify-center items-center gap-2.5'>
-            <p className='text-[#FFFFFF] text-[16px] font-medium'>
-              Post a Need →
-            </p>
-          </div>
-          <div className='flex py-3.5 px-6 rounded-[12px]  justify-center items-center gap-2.5'>
-            <p className='text-[#09090B] text-[16px] font-medium'>
-              Create My Profile
-            </p>
-          </div>
-        </div>
-
-        <div className='relative'>
-          <div className='absolute top-0 left-[70px] w-[70px] h-[34px] flex items-center'>
-            <img
-              src='/image/p1.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white'
-            />
-            <img
-              src='/image/p2.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white -ml-3'
-            />
-            <img
-              src='/image/p3.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white -ml-3'
-            />
-            <img
-              src='/image/p2.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white -ml-3'
-            />
-            <img
-              src='/image/p3.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white -ml-3'
-            />
-            <img
-              src='/image/p1.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white'
-            />
-            <img
-              src='/image/p2.png'
-              alt=''
-              className='w-12 h-12 rounded-full border-[1.5px] border-white -ml-3'
-            />
-          </div>
-
-          <p className='font-medium text-[16px] leading-[100%] text-[#252549] mt-[70px]'>
-            Connect with verified healthcare professionals in real time
-          </p>
-        </div>
-      </div>
-
-      {/* Buttons */}
-      {/* 1 */}
-      <div
-        className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4) shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
-        
-
-        2xl:absolute 
-        2xl:top-[628px] 2xl:left-16
-        3xl:top-[628px] 3xl:left-16 z-50'
-      >
-        <img src='/image/codicon_account.svg' alt='img' />
-        <div className='flex flex-col'>
-          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-            Create account
-          </p>
-          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-            Free & quick
-          </p>
-        </div>
-      </div>
-      {/* 2 */}
-      <div
-        className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
-        2xl:absolute 
-        2xl:top-[787px] 2xl:left-[281px]
-        
-      3xl:top-[787px] 3xl:left-[281px] z-50'
-      >
-        <img src='/image/codicon_account.svg' alt='img' />
-        <div className='flex flex-col'>
-          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-            Verify profile
-          </p>
-          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-            Credentials in 24h
-          </p>
-        </div>
-      </div>
-      {/* 3 */}
-      <div
-        className='rounded-[20px] p-5 hidden 2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit 
-        2xl:absolute 
-        2xl:top-[825px] 2xl:left-[1100px]
-       
-      3xl:top-[825px] 3xl:left-[1335px] z-50'
-      >
-        <img src='/image/browse.svg' alt='img' />
-        <div className='flex flex-col'>
-          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-            Browse
-          </p>
-          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-            Jobs & contracts
-          </p>
-        </div>
-      </div>
-      {/* 4 */}
-      <div
-        className='rounded-[20px] p-5 hidden  2xl:flex gap-5 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] w-fit  
-        2xl:absolute
-        2xl:top-[628px] 2xl:left-[1250px] 
-      3xl:top-[628px] 3xl:left-[1574px] z-50 '
-      >
-        <img src='/image/colaborate.svg' alt='img' />
-        <div className='flex flex-col'>
-          <p className='font-medium text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-            Collaborate
-          </p>
-          <p className='font-light text-[16px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-            Secure contracts
-          </p>
-        </div>
-      </div>
-
-      {/* Test Button */}
-      <div className='flex flex-col justify-center items-center gap-3 relative mx-auto'>
+    return (
         <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] 
-          absolute
-          top-0
-          -left-[150px]
-          md:w-[300px]
-        
-
-        2xl:hidden'
+            className="relative w-full  bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${bgImage})` }}
         >
-          <img src='/image/codicon_account.svg' alt='img' />
-          <div className='flex flex-col'>
-            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-              Create account
-            </p>
-            <p className='font-light text-[12px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-              Free & quick
-            </p>
-          </div>
+            {/* subtle overlay for readability */}
+            <div className="pointer-events-none absolute inset-0 bg-white/40" />
+
+            {/* NAVBAR */}
+            <header className="fixed top-0 left-0 z-50 w-full px-3 sm:px-6 py-4 pointer-events-none">
+                <nav
+                    className={[
+                        "pointer-events-auto mx-auto flex w-full max-w-[1400px] items-center justify-between",
+                        "rounded-2xl border border-white/40 px-4 sm:px-6 lg:px-10 py-3",
+                        "transition-all duration-500 ease-in-out",
+                        isScrolled
+                            ? "bg-white/90 backdrop-blur-xl shadow-xl shadow-slate-200/50 -translate-y-1"
+                            : "bg-[#e2f1ee]/75 backdrop-blur-md shadow-none",
+                    ].join(" ")}
+                >
+                    {/* Logo */}
+                    <Link to="/" className="flex items-center">
+            <span className="text-xl sm:text-2xl lg:text-[26px] font-bold text-[#1e2238] tracking-tight">
+              Quicklocum<span className="text-[#52c41a]">.</span>
+            </span>
+                    </Link>
+
+                    {/* Desktop Links */}
+                    <div className="hidden lg:flex items-center gap-8 xl:gap-12 text-[15px] font-medium text-[#1e2238]">
+                        {navLinks.map((l) => (
+                            <a
+                                key={l.name}
+                                href={l.href}
+                                className="hover:text-blue-600 transition-colors"
+                            >
+                                {l.name}
+                            </a>
+                        ))}
+                    </div>
+
+                    {/* Actions */}
+                    <div className="flex items-center gap-2 sm:gap-3">
+                        {/* Language (hide on xs) */}
+                        <div className="hidden sm:block">
+                            <Select defaultValue="en">
+                                <SelectTrigger className="h-10 w-[78px] rounded-xl border-slate-300 bg-transparent text-[#1e2238] font-semibold focus:ring-0">
+                                    <SelectValue placeholder="En" />
+                                </SelectTrigger>
+                                <SelectContent className="rounded-xl">
+                                    <SelectItem value="en">En</SelectItem>
+                                    <SelectItem value="bn">Bn</SelectItem>
+                                    <SelectItem value="fr">Fr</SelectItem>
+                                </SelectContent>
+                            </Select>
+                        </div>
+
+                        {/* Desktop CTA */}
+                        <Button className="hidden sm:inline-flex bg-[#2d325a] hover:bg-[#1e2238] text-white px-5 sm:px-7 h-11 sm:h-12 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-semibold transition-all">
+                            Create My Profile
+                        </Button>
+
+                        {/* Mobile menu */}
+                        <div className="lg:hidden">
+                            <Sheet>
+                                <SheetTrigger asChild>
+                                    <Button
+                                        variant="ghost"
+                                        size="icon"
+                                        className="rounded-full hover:bg-white/50"
+                                        aria-label="Open menu"
+                                    >
+                                        <Menu className="h-6 w-6 text-[#1e2238]" />
+                                    </Button>
+                                </SheetTrigger>
+
+                                <SheetContent side="right" className="w-[300px] bg-white/95 backdrop-blur-xl">
+                                    <SheetHeader className="text-left">
+                                        <SheetTitle className="text-2xl font-bold">
+                                            Quicklocum<span className="text-[#52c41a]">.</span>
+                                        </SheetTitle>
+                                    </SheetHeader>
+
+                                    <div className="mt-8 flex flex-col gap-6 p-4">
+                                        {navLinks.map((l) => (
+                                            <a
+                                                key={l.name}
+                                                href={l.href}
+                                                className="text-lg font-semibold text-[#1e2238] hover:text-blue-600 transition-colors"
+                                            >
+                                                {l.name}
+                                            </a>
+                                        ))}
+
+                                        <hr className="border-slate-100" />
+
+                                        <div className="space-y-2">
+                                            <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                                                Language
+                                            </p>
+                                            <Select defaultValue="en">
+                                                <SelectTrigger className="h-12 w-full rounded-xl border-slate-200">
+                                                    <SelectValue />
+                                                </SelectTrigger>
+                                                <SelectContent>
+                                                    <SelectItem value="en">English (En)</SelectItem>
+                                                    <SelectItem value="bn">Bengali (Bn)</SelectItem>
+                                                    <SelectItem value="fr">French (Fr)</SelectItem>
+                                                </SelectContent>
+                                            </Select>
+                                        </div>
+
+                                        {/* Mobile CTAs */}
+                                        <div className="mt-2 flex flex-col gap-3">
+                                            <Button className="bg-[#2d325a] hover:bg-[#1e2238] text-white h-12 rounded-xl text-sm font-semibold">
+                                                Create My Profile
+                                            </Button>
+                                            <Button
+                                                variant="outline"
+                                                className="h-12 rounded-xl text-sm font-semibold border-2"
+                                            >
+                                                Post my need
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </SheetContent>
+                            </Sheet>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            {/* HERO */}
+            <section className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-10 lg:grid-cols-2 px-4 sm:px-8 lg:px-10 pt-28 sm:pt-40 lg:pt-52 pb-20">
+                {/* Left */}
+                <div className="order-2 lg:order-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+                    <h1
+                        className="font-bold leading-[1.1] text-[#334155] tracking-tight"
+                        style={{ fontSize: "clamp(32px, 6vw, 68px)" }}
+                    >
+                        The ecosystem that brings{" "}
+                        <span className="text-[#3b49df]">healthcare</span> staffing together
+                    </h1>
+
+                    <p className="mt-6 sm:mt-7 text-base sm:text-lg lg:text-xl text-slate-600/90 leading-relaxed font-medium max-w-lg mx-auto lg:mx-0">
+                        One platform to publish contracts, connect with verified healthcare
+                        professionals, and fill shifts faster — with or without agencies.
+                    </p>
+
+                    <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
+                        <Button
+                            size="lg"
+                            className="h-14 sm:h-16 rounded-xl sm:rounded-2xl px-8 sm:px-10 text-base sm:text-lg font-bold bg-[#3b49df] hover:bg-[#2d39b8] text-white shadow-lg shadow-blue-600/20"
+                        >
+                            Post my need
+                        </Button>
+
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="h-14 sm:h-16 rounded-xl sm:rounded-2xl px-8 sm:px-10 text-base sm:text-lg font-bold border-2 border-slate-300 bg-white/50 backdrop-blur"
+                        >
+                            Create My Profile
+                        </Button>
+                    </div>
+
+                    {/* Rating */}
+                    <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                        <div className="flex items-center gap-0.5">
+                            {[1, 2, 3, 4].map((s) => (
+                                <Star key={s} size={20} fill="#475569" className="text-slate-600" />
+                            ))}
+                            {/* partial star */}
+                            <div className="relative">
+                                <Star size={20} className="text-[#475569]" strokeWidth={2} />
+                                <div className="absolute inset-0 overflow-hidden" style={{ width: "70%" }}>
+                                    <Star size={20} fill="#475569" className="text-slate-600" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <p className="text-sm sm:text-[15px] font-semibold text-slate-500 text-center sm:text-left">
+                            4.8/5 based on 7,377 reviews | GDPR Compliant
+                        </p>
+                    </div>
+                </div>
+
+                {/* Right */}
+                <div className="order-1 lg:order-2 w-full max-w-[620px] lg:max-w-none mx-auto">
+                    <div className="relative">
+                        <div className="relative z-10 overflow-hidden  shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
+                            <img
+                                src={heroImage}
+                                alt="Dashboard Preview"
+                                className="w-full h-auto object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+
+                        {/* glow */}
+                        <div className="pointer-events-none absolute -top-10 -right-10 h-44 w-44 sm:h-80 sm:w-80 rounded-full bg-blue-100/40 blur-[70px] sm:blur-[110px]" />
+                    </div>
+                </div>
+            </section>
+
+            {/* OPTIONAL: sections placeholder for anchors */}
+            <div className="sr-only">
+                <div id="how-it-works" />
+                <div id="for-clients" />
+                <div id="for-professionals" />
+                <div id="pricing" />
+            </div>
         </div>
-        {/* 2 */}
-        <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px]  
-          
-          md:w-[300px]
-         z-50 absolute left-[50px] top-20 2xl:hidden'
-        >
-          <img src='/image/codicon_account.svg' alt='img' className='h-6 w-6' />
-          <div className='flex flex-col'>
-            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-              Verify profile
-            </p>
-            <p className='font-light  text-[12px]  xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-              Credentials in 24h
-            </p>
-          </div>
-        </div>
-        {/* 3 */}
-        <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] md:w-[300px]
-         z-50 absolute -left-[150px] top-[150px] 2xl:hidden'
-        >
-          <img src='/image/browse.svg' alt='img' />
-          <div className='flex flex-col'>
-            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-              Browse
-            </p>
-            <p className='font-light text-[12px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-              Jobs & contracts
-            </p>
-          </div>
-        </div>
-        {/* 4 */}
-        <div
-          className='rounded-[20px] p-2 flex gap-2 bg-[rgba(255, 255, 255, 0.4)] shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[60px] md:w-[300px] absolute left-[50px] 
-          top-[200px]
-        
-     2xl:hidden z-50 '
-        >
-          <img src='/image/colaborate.svg' alt='img' />
-          <div className='flex flex-col'>
-            <p className='font-medium text-[16px] md:text-[20px] xl:text-[24px] leading-[100%] text-center text-[#000000]'>
-              Collaborate
-            </p>
-            <p className='font-light text-[12px] xl:text-[20px] leading-[100%] text-center text-[#000000]'>
-              Secure contracts
-            </p>
-          </div>
-        </div>
-
-        <div
-          className='rounded-[20px] bg-white  shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[80px] z-10
-          h-[300px]
-          w-[300px]
-          absolute
-          top-[300px]
-        2xl:hidden 
-
-'
-        ></div>
-      </div>
-
-      {/* end test button */}
-
-      {/* white box */}
-      <div
-        className='rounded-[20px] bg-white  shadow-[0px_9px_90px_rgba(0,0,0,0.08)] backdrop-blur-[80px] z-10
-        hidden
-        2xl:block
-        2xl:absolute
-        2xl:h-[500px] 2xl:w-[400px] 2xl:top-[668px] 2xl:left-[633px]  
-        3xl:h-[700px] 3xl:w-[650px] 3xl:top-[668px] 3xl:left-[633px]  
-
-'
-      ></div>
-    </div>
-  );
+    );
 };
 
 export default Hero;
